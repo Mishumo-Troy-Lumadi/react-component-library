@@ -9,7 +9,7 @@ interface Button {
 
 interface Card {
     className?: string
-    children?: ReactElement;
+    children?: ReactNode;
     onClick?: VoidFunction
 }
 

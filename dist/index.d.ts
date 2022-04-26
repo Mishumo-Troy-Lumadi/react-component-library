@@ -1,6 +1,6 @@
 /// <reference types="react" />
 import * as react from 'react';
-import { ReactNode, ReactElement } from 'react';
+import { ReactNode } from 'react';
 
 interface Button {
     label?: string;
@@ -10,7 +10,7 @@ interface Button {
 }
 interface Card {
     className?: string;
-    children?: ReactElement;
+    children?: ReactNode;
     onClick?: VoidFunction;
 }
 
