@@ -1,4 +1,4 @@
 import { FunctionComponent } from 'react';
-import { ButtonProps } from '../../lib/interfaces';
-declare const Button: FunctionComponent<ButtonProps>;
+import { Button as Props } from '../../lib/interfaces';
+declare const Button: FunctionComponent<Props>;
 export default Button;

@@ -1,14 +1,18 @@
 import React, { FunctionComponent } from 'react';
-import { ButtonProps } from '../../lib/interfaces';
+import { Button as Props } from '../../lib/interfaces';
 
-const Button: FunctionComponent<ButtonProps> = ({
+const Button: FunctionComponent<Props> = ({
 	label,
 	icon,
 	className,
 	onClick,
 }) => {
 	return (
-		<button {...{ className, onClick }}>
+		<button
+			className={`${
+				label ? (icon ? 'px-4 py-2 gap-2' : 'px-4 py-2') : 'p-4'
+			} ${className}`}
+			{...{ onClick }}>
 			{icon}
 			{label}
 		</button>

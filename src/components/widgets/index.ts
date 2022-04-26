@@ -1,3 +1,4 @@
 import { default as Button } from './Button'
+import { default as Card } from './Card'
 
-export default { Button }
+export default { Button,Card }

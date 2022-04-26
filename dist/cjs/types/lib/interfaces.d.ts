@@ -1,8 +1,13 @@
-import { ReactNode } from "react";
-interface ButtonProps {
+import { ReactElement, ReactNode } from "react";
+interface Button {
     label?: string;
     icon?: ReactNode;
     className?: string;
     onClick?: VoidFunction;
 }
-export { ButtonProps };
+interface Card {
+    className?: string;
+    children?: ReactElement;
+    onClick?: VoidFunction;
+}
+export { Button, Card };
