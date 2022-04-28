@@ -1,2 +1,2 @@
 import './styles/tailwind.css';
-export { Widgets } from './components';
+export { Base, Utilities, Widgets } from './components';

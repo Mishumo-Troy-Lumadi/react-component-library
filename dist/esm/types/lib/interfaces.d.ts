@@ -5,9 +5,10 @@ interface Button {
     className?: string;
     onClick?: VoidFunction;
 }
-interface Card {
+interface Component {
+    type?: string;
     className?: string;
     children?: ReactNode;
     onClick?: VoidFunction;
 }
-export { Button, Card };
+export { Button, Component };
