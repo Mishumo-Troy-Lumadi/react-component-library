@@ -2880,12 +2880,7 @@ const Page = ({ className, children }) => {
     return (React.createElement(Layout, { className: `flex-auto ${className}` }, children));
 };
 
-var index$4 = { Layout, Page };
-
-var index$5 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  'default': index$4
-});
+var index$2 = { Layout, Page };
 
 const Button = ({ label, icon, className, onClick, }) => {
     return (React.createElement("button", Object.assign({ className: `${label ? (icon ? 'px-4 py-2 gap-2' : 'px-4 py-2') : 'p-4'} transition duration-300 w-fit h-fit ${className}` }, { onClick }),
@@ -9372,18 +9367,8 @@ const Video = ({ className, controls, loop, muted, url }) => {
         React.createElement(ReactPlayer, Object.assign({}, { controls, loop, muted, url }, { width: '100%', height: '100%' }))));
 };
 
-var index$2 = { Button, Card, Video };
-
-var index$3 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  'default': index$2
-});
+var index$1 = { Button, Card, Video };
 
 var index = { Column, Row, Grid };
 
-var index$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  'default': index
-});
-
-export { index$1 as Base, index$5 as Utilities, index$3 as Widgets };
+export { index as Base, index$2 as Utilities, index$1 as Widgets };

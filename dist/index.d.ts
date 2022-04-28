@@ -24,23 +24,11 @@ declare const _default$2: {
     Page: react.FunctionComponent<Component>;
 };
 
-declare namespace index_d$2 {
-  export {
-    _default$2 as default,
-  };
-}
-
 declare const _default$1: {
     Button: react.FunctionComponent<Button>;
     Card: react.FunctionComponent<Component>;
     Video: react.FunctionComponent<Component>;
 };
-
-declare namespace index_d$1 {
-  export {
-    _default$1 as default,
-  };
-}
 
 declare const _default: {
     Column: react.FunctionComponent<Component>;
@@ -48,10 +36,4 @@ declare const _default: {
     Grid: react.FunctionComponent<Component>;
 };
 
-declare namespace index_d {
-  export {
-    _default as default,
-  };
-}
-
-export { index_d as Base, index_d$2 as Utilities, index_d$1 as Widgets };
+export { _default as Base, _default$2 as Utilities, _default$1 as Widgets };
