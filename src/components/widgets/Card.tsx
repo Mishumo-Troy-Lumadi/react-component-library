@@ -1,9 +1,11 @@
 import React, { FunctionComponent } from 'react';
-import { Card as Props } from '../../lib/interfaces';
+import { Component as Props } from '../../lib/interfaces';
 
 const Card: FunctionComponent<Props> = ({ className, children, onClick }) => {
 	return (
-		<div {...{ onClick }} className={`rounded shadow ${className}`}>
+		<div
+			{...{ onClick }}
+			className={`rounded shadow transition duration-300 ${className}`}>
 			{children}
 		</div>
 	);

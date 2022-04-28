@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode } from "react";
+import { ReactNode } from "react";
 
 interface Button {
     label?: string;
@@ -7,11 +7,12 @@ interface Button {
     onClick?: VoidFunction;
 }
 
-interface Card {
+interface Component {
+    type?: string
     className?: string
-    children?: ReactNode;
+    children?: ReactNode
     onClick?: VoidFunction
 }
 
 
-export { Button, Card }
+export { Button, Component }

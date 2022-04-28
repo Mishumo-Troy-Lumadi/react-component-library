@@ -11,7 +11,7 @@ const Button: FunctionComponent<Props> = ({
 		<button
 			className={`${
 				label ? (icon ? 'px-4 py-2 gap-2' : 'px-4 py-2') : 'p-4'
-			} ${className}`}
+			} transition duration-300 w-fit h-fit ${className}`}
 			{...{ onClick }}>
 			{icon}
 			{label}
