@@ -10,5 +10,9 @@ interface Component {
     className?: string;
     children?: ReactNode;
     onClick?: VoidFunction;
+    controls?: boolean;
+    loop?: boolean;
+    muted?: boolean;
+    url?: string;
 }
 export { Button, Component };

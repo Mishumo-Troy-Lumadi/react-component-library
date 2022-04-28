@@ -13,6 +13,10 @@ interface Component {
     className?: string;
     children?: ReactNode;
     onClick?: VoidFunction;
+    controls?: boolean;
+    loop?: boolean;
+    muted?: boolean;
+    url?: string;
 }
 
 declare const _default$2: {
@@ -29,6 +33,7 @@ declare namespace index_d$2 {
 declare const _default$1: {
     Button: react.FunctionComponent<Button>;
     Card: react.FunctionComponent<Component>;
+    Video: react.FunctionComponent<Component>;
 };
 
 declare namespace index_d$1 {
