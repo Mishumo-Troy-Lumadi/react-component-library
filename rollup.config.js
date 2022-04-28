@@ -36,6 +36,88 @@ export default [
             }),
         ]
     }, {
+        input: 'src/Base.ts',
+        output: [
+            {
+                file: packageJson.main,
+                format: 'cjs',
+                sourceMap: true
+            },
+            {
+                file: packageJson.module,
+                format: 'esm',
+                sourceMap: true
+            }
+        ],
+        plugins: [
+            peerDepsExternalPlugin(),
+            resolve(),
+            commonjs(),
+            typescript({ tsconfig: './tsconfig.json' }),
+            postcss({
+                config: {
+                    path: './postcss.config.js'
+                },
+                extensions: ['.css'],
+                extract: false
+            }),
+        ]
+    },
+    {
+        input: 'src/Utilities.ts',
+        output: [
+            {
+                file: packageJson.main,
+                format: 'cjs',
+                sourceMap: true
+            },
+            {
+                file: packageJson.module,
+                format: 'esm',
+                sourceMap: true
+            }
+        ],
+        plugins: [
+            peerDepsExternalPlugin(),
+            resolve(),
+            commonjs(),
+            typescript({ tsconfig: './tsconfig.json' }),
+            postcss({
+                config: {
+                    path: './postcss.config.js'
+                },
+                extensions: ['.css'],
+                extract: false
+            }),
+        ]
+    }, {
+        input: 'src/Widgets.ts',
+        output: [
+            {
+                file: packageJson.main,
+                format: 'cjs',
+                sourceMap: true
+            },
+            {
+                file: packageJson.module,
+                format: 'esm',
+                sourceMap: true
+            }
+        ],
+        plugins: [
+            peerDepsExternalPlugin(),
+            resolve(),
+            commonjs(),
+            typescript({ tsconfig: './tsconfig.json' }),
+            postcss({
+                config: {
+                    path: './postcss.config.js'
+                },
+                extensions: ['.css'],
+                extract: false
+            }),
+        ]
+    }, {
         input: 'dist/esm/types/index.d.ts',
         output: [{ file: 'dist/index.d.ts', format: 'esm' }],
         plugins: [
